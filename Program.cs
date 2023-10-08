@@ -28,9 +28,9 @@ class Program
                     Main();
                     break;
             }
-            
+
             Console.Clear();
-            
+
             Console.WriteLine("Введите значение n: ");
             int n = int.Parse(Console.ReadLine());
             Console.Clear();
@@ -41,8 +41,9 @@ class Program
 
             if (n < 0 || k < 0 || k > n)
             {
-                Console.WriteLine("Неверные значения n и k. Убедитесь, что 0 <= k <= n.");
-                return;
+                Console.Clear();
+                Console.WriteLine("Неверные значения n и k. Убедитесь, что 0 <= k <= n.\n");
+                Main();
             }
 
             switch (selected)
